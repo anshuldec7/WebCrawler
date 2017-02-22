@@ -14,16 +14,17 @@ __Java Application for Crawling the Web with a given URL, up to a given maximum 
      ```java
      private static final int MAX_LIMIT_TO_SEARCH = 200;
      ```
-   * Define a Set to take account of visited pages (This is to ensure we traverse a page only once)
+   * Define a Set to take account of visited pages (This is to ensure we traverse a page only once).
    
      ```java
      private Set<String> pagesVisited;
      ```
-   * Define a Queue to take account of all the pages that we need to traverse (Initialise it with the given URL)
+   * Define a Queue to take account of all the pages that we need to traverse (Initialise it with the given URL).
    
      ```java	  
      private Queue<String> pagesToVisit;
      ```
-   * Define a Method "countNumberOfLinks" that creates an object of Spider Class (Will be creating soon) and pass the URL and      loop this till we reach either 200 pages or there are no more pages left for traversal
+   * Define a Method "countNumberOfLinks" that creates an object of Spider Class (Will be creating soon) and pass the URL and      loop this till we reach either 200 pages or there are no more pages left for traversal.
 2. Create a Spider class.
    * Define a USER_AGENT to make sure that Web server does not treat our crawler as a robot instead treat it as a browser.
+   * Define a Queue that will collect all the links for a particular URL traversal and adds it to the main Queue in WebCrawler      class.
