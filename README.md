@@ -14,7 +14,7 @@ __Java Application for Crawling the Web with a given URL up to a given maximum n
 - [x] Crawl through the given URL page and finds all the links on that page.
 - [x] Counts the number of links and store the information as a Key Value pair in a HashMap as well as in a Database Table.
 - [x] Crawl through first 200 pages of the given URL in a Breadth First Search manner.
-- [x] Error handling in case there are fewer url (less than 200) or if the a URL sends bad response.
+- [x] Error handling in case there are fewer url (less than 200) or if the URL sends bad response.
 
 ## Technologies
 > Java 8
