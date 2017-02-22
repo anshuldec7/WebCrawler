@@ -7,7 +7,12 @@ __Java Application for Crawling the Web with a given URL, up to a given maximum 
 - [x] Crawl through first 200 pages of the given URL in a Breadth First Search manner.
 - [x] Error handling in case there are fewer url (less than 200) or if the a URL sends bad response.
 
-###Basic Idea (Algorithm)
+## Technologies
+> Java 8
+> Jsoup for URL parsing
+> Amazon RDS (MySQL)
+
+###Basic Idea 
 1. Create a WebCrawler class.
    * Define a Static variable to ensure we only traverse through first 200 pages.
    
@@ -28,3 +33,20 @@ __Java Application for Crawling the Web with a given URL, up to a given maximum 
 2. Create a Spider class.
    * Define a USER_AGENT to make sure that Web server does not treat our crawler as a robot instead treat it as a browser.
    * Define a Queue that will collect all the links for a particular URL traversal and adds it to the main Queue in WebCrawler      class.
+   * Used JSOUP library to parse and return a HTML document object.
+   
+3. Create a database Connection class.
+   * Connect to Amazon RDS MySql database and insert the data into a table LinksDetails.
+   * Sample Data
+        Link | Count
+        ---- | -----
+        http://www.yahoo.com/ |  101
+        https://mail.yahoo.com/ | 230
+
+*Cheers !!* :beers:
+* **Anshul Agrawal** *  :metal:
+
+
+   
+   
+   
