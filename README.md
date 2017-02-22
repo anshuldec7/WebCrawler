@@ -1,7 +1,13 @@
 # Web Crawler
 __Java Application for Crawling the Web with a given URL, up to a given maximum number of pages implementing BFS__
 
-*Note: I have removed my RDS database credential, you can create your own and replace them at line 15 and 16 in file [DBConnection.java](https://github.com/anshuldec7/WebCrawler/blob/master/Crawler/src/com/crawler/DBConnection.java)*
+*Note: I have removed my RDS database credential, you can create your own and replace your username and passowrd at line 15 and 16 in file [DBConnection.java](https://github.com/anshuldec7/WebCrawler/blob/master/Crawler/src/com/crawler/DBConnection.java): *
+  ```java
+	static final String USER = "YOUR_USERNAME";
+	static final String PASS = "YOUR_PASSWORD";
+  ```
+
+
 ## What does it do ?
 - [x] Takes a URL as an input.
 - [x] Crawl through the given URL page and finds all the links on that page.
