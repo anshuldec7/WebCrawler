@@ -75,10 +75,10 @@ package com.crawler;
 
 
 	  /**
-	   * Returns the next URL to visit (in the order that they were found). We also do a check to make
-	   * sure this method doesn't return a URL that has already been visited.
 	   * 
 	   * @return
+	   * 	- next URL to visit (maintains the order in which they are found). I also make
+	   * 	  sure that this method should not return a already traversed URL
 	   */
 	  private String nextUrl()
 	  {
