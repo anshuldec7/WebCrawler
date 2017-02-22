@@ -10,14 +10,17 @@ __Java Application for Crawling the Web with a given URL, up to a given maximum 
 ###Basic Idea (Algorithm)
 1. Create a WebCrawler class.
    * Define a Static variable to ensure we only traverse through first 200 pages.
+   
      ```java
      private static final int MAX_LIMIT_TO_SEARCH = 200;
      ```
    * Define a Set to take account of visited pages (This is to ensure we traverse a page only once)
+   
      ```java
      private Set<String> pagesVisited;
      ```
    * Define a Queue to take account of all the pages that we need to traverse (Initialise it with the given URL)
+   
      ```java	  
      private Queue<String> pagesToVisit;
      ```
