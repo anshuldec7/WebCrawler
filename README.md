@@ -9,7 +9,9 @@ __Java Application for Crawling the Web with a given URL, up to a given maximum 
 
 ## Technologies
 > Java 8
+
 > Jsoup for URL parsing
+
 > Amazon RDS (MySQL)
 
 ###Basic Idea 
