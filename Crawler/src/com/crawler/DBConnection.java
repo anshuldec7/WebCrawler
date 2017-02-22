@@ -12,8 +12,8 @@ public class DBConnection {
 	static final String DB_URL = "jdbc:mysql://aws.cbmuqc9mcupo.us-east-1.rds.amazonaws.com:3306/crawler";
 	  
 	// Database credentials
-	static final String USER = "clouduser";
-	static final String PASS = "cloud123";
+	static final String USER = "";
+	static final String PASS = "";
 	   
 	
 	public  DBConnection(){
