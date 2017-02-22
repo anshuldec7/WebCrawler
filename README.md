@@ -37,15 +37,17 @@ __Java Application for Crawling the Web with a given URL, up to a given maximum 
    
 3. Create a database Connection class.
    * Connect to Amazon RDS MySql database and insert the data into a table LinksDetails.
-   * Sample Data
+   * Sample Data for input URL : https://www.yahoo.com/
    
         Link | Count
         ---- | -----
         http://www.yahoo.com/ |  101
         https://mail.yahoo.com/ | 230
+        .... | ....
+        .... | ....
 
-*Cheers !!* :beers:
-- *Anshul Agrawal*  :metal:
+:beers: *Cheers !!* 
+
 
 
    
