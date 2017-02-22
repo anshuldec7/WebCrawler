@@ -19,11 +19,9 @@ public class DBConnection {
 	public  DBConnection(){
 		 try {
 	         Class.forName(JDBC_DRIVER);
-	         this.connect = DriverManager.getConnection(DB_URL, USER, PASS);
-	         
+	         this.connect = DriverManager.getConnection(DB_URL, USER, PASS);  
 		 } 
 		 catch (Exception e) {
-	       
 		 }
 	}
 	public void insertData(String url, int count) {
@@ -32,26 +30,25 @@ public class DBConnection {
 			String sql = "INSERT INTO LinksDetails " +
 	                   "VALUES ('" + url + "','" + count +"')";
 			stmt.executeUpdate(sql);
-			System.out.println("Inserted records into the table...");
+			//System.out.println("Inserted records into the table...");
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 	public void connectionClose() {
-
-		      //finally block used to close resources
 		      try{
 		         if(stmt!=null)
 		        	 connect.close();
 		      }catch(SQLException se){
 		      }// do nothing
+		
 		      try{
 		         if(connect!=null)
 		            connect.close();
 		      }catch(SQLException se){
 		         se.printStackTrace();
-		      }//end finally try
+		      }
 
 	}
 }
