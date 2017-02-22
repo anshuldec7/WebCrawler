@@ -1,5 +1,4 @@
 # Web Crawler
-__Java Application for Crawling the Web with a given URL up to a given maximum number of pages implementing BFS__
 
 *Note: I have removed my RDS database credential although you can create your own and replace your username and passowrd at line 15 and 16 in file [DBConnection.java](https://github.com/anshuldec7/WebCrawler/blob/master/Crawler/src/com/crawler/DBConnection.java):*
 
@@ -23,7 +22,7 @@ __Java Application for Crawling the Web with a given URL up to a given maximum n
 
 > Amazon RDS (MySQL)
 
-###Basic Idea 
+###Procedure (Code Explaination) 
 1. Create a WebCrawler class.
    * Define a Static variable to ensure we only traverse through first 200 pages.
    
